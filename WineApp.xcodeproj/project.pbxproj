@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068138CDEF2C04082E9C54BC /* Pods_WineApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECC8F2BEBDA4AA607A40D8B /* Pods_WineApp.framework */; };
+		C323D48326BAEA76008AD102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D48226BAEA76008AD102 /* AppDelegate.swift */; };
+		C323D48C26BAEA77008AD102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C323D48B26BAEA77008AD102 /* Assets.xcassets */; };
+		C323D48F26BAEA77008AD102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323D48D26BAEA77008AD102 /* LaunchScreen.storyboard */; };
+		C323D4A226BAEDAF008AD102 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4A126BAEDAF008AD102 /* ViewModelType.swift */; };
+		C323D4A426BAF0A2008AD102 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4A326BAF0A2008AD102 /* LoginViewModel.swift */; };
+		C323D4A626BAF0B8008AD102 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4A526BAF0B8008AD102 /* LoginViewController.swift */; };
+		C323D4A826BAF0E1008AD102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323D4A726BAF0E1008AD102 /* Main.storyboard */; };
+		C323D4AA26BAF107008AD102 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4A926BAF107008AD102 /* SignUpViewController.swift */; };
+		C323D4AC26BAF120008AD102 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4AB26BAF120008AD102 /* SignUpViewModel.swift */; };
+		C323D4AE26BAF136008AD102 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323D4AD26BAF136008AD102 /* SignUp.storyboard */; };
+		C323D4B026BAF14F008AD102 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4AF26BAF14F008AD102 /* HomeViewController.swift */; };
+		C323D4B226BAF15F008AD102 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4B126BAF15F008AD102 /* HomeViewModel.swift */; };
+		C323D4B426BAF16A008AD102 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323D4B326BAF16A008AD102 /* Home.storyboard */; };
+		C323D4B626BB25C8008AD102 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4B526BB25C8008AD102 /* LoginCoordinator.swift */; };
+		C323D4B826BB2A20008AD102 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4B726BB2A20008AD102 /* HomeCoordinator.swift */; };
+		C323D4BA26BB3397008AD102 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323D4B926BB3397008AD102 /* SignUpCoordinator.swift */; };
+		C35C467E26BD39BF00200292 /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C467D26BD39BF00200292 /* RealmUser.swift */; };
+		C35C468126BD5CA500200292 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C468026BD5CA500200292 /* RealmStorage.swift */; };
+		C35C468326BDB41B00200292 /* WineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C468226BDB41B00200292 /* WineTableViewCell.swift */; };
+		C35C468626BDC98600200292 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C468526BDC98600200292 /* Wine.swift */; };
+		C35C468926BDDD4E00200292 /* DescriptionWineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C468826BDDD4E00200292 /* DescriptionWineViewController.swift */; };
+		C35C468B26BDDD6400200292 /* DescriptionWineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C468A26BDDD6400200292 /* DescriptionWineViewModel.swift */; };
+		C35C468D26BDDD7E00200292 /* DescriptionWine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35C468C26BDDD7E00200292 /* DescriptionWine.storyboard */; };
+		C35C468F26BDDD9600200292 /* DescriptionWineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C468E26BDDD9600200292 /* DescriptionWineCoordinator.swift */; };
+		C35C469126C170C600200292 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C469026C170C600200292 /* User.swift */; };
+		C35C469426C4362900200292 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C469326C4362900200292 /* EmailValidator.swift */; };
+		C35C469626C53B9100200292 /* RealmWine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C469526C53B9100200292 /* RealmWine.swift */; };
+		C35C469A26C53E2800200292 /* AddWineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C469926C53E2800200292 /* AddWineViewController.swift */; };
+		C35C469C26C53E3800200292 /* AddWineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C469B26C53E3800200292 /* AddWineViewModel.swift */; };
+		C35C469E26C53E4400200292 /* AddWine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35C469D26C53E4400200292 /* AddWine.storyboard */; };
+		C35C46A026C53E9300200292 /* AddWineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C469F26C53E9300200292 /* AddWineCoordinator.swift */; };
+		C3791E3B26E905C500142E33 /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3791E3A26E905C500142E33 /* RxTableViewCell.swift */; };
+		C385B8B226CFAB1900775FF6 /* FileManagerWine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385B8B126CFAB1900775FF6 /* FileManagerWine.swift */; };
+		C385B8D526D2552100775FF6 /* FilterOfWineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385B8D426D2552100775FF6 /* FilterOfWineViewController.swift */; };
+		C385B8D726D2554800775FF6 /* FilterOfWineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385B8D626D2554800775FF6 /* FilterOfWineViewModel.swift */; };
+		C385B8DB26D25DE700775FF6 /* FilterOfWineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385B8DA26D25DE700775FF6 /* FilterOfWineCoordinator.swift */; };
+		C385B8E126D4222500775FF6 /* FilterOfWine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C385B8E026D4222500775FF6 /* FilterOfWine.storyboard */; };
+		C385B8E326D4238A00775FF6 /* FilterOfWineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385B8E226D4238A00775FF6 /* FilterOfWineCollectionViewCell.swift */; };
+		C385B92526D9912400775FF6 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385B92426D9912400775FF6 /* Filter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42741693BCBEC7E604705386 /* Pods-WineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineApp.release.xcconfig"; path = "Target Support Files/Pods-WineApp/Pods-WineApp.release.xcconfig"; sourceTree = "<group>"; };
+		7E4F4215D66486FB715792D2 /* Pods-WineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineApp.debug.xcconfig"; path = "Target Support Files/Pods-WineApp/Pods-WineApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BECC8F2BEBDA4AA607A40D8B /* Pods_WineApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WineApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C323D47F26BAEA76008AD102 /* WineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C323D48226BAEA76008AD102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C323D48B26BAEA77008AD102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C323D48E26BAEA77008AD102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C323D49026BAEA77008AD102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C323D4A126BAEDAF008AD102 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		C323D4A326BAF0A2008AD102 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C323D4A526BAF0B8008AD102 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C323D4A726BAF0E1008AD102 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C323D4A926BAF107008AD102 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C323D4AB26BAF120008AD102 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C323D4AD26BAF136008AD102 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		C323D4AF26BAF14F008AD102 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C323D4B126BAF15F008AD102 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C323D4B326BAF16A008AD102 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C323D4B526BB25C8008AD102 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		C323D4B726BB2A20008AD102 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		C323D4B926BB3397008AD102 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		C35C467D26BD39BF00200292 /* RealmUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
+		C35C467F26BD3E8E00200292 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C35C468026BD5CA500200292 /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		C35C468226BDB41B00200292 /* WineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineTableViewCell.swift; sourceTree = "<group>"; };
+		C35C468526BDC98600200292 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		C35C468826BDDD4E00200292 /* DescriptionWineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionWineViewController.swift; sourceTree = "<group>"; };
+		C35C468A26BDDD6400200292 /* DescriptionWineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionWineViewModel.swift; sourceTree = "<group>"; };
+		C35C468C26BDDD7E00200292 /* DescriptionWine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DescriptionWine.storyboard; sourceTree = "<group>"; };
+		C35C468E26BDDD9600200292 /* DescriptionWineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionWineCoordinator.swift; sourceTree = "<group>"; };
+		C35C469026C170C600200292 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C35C469326C4362900200292 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		C35C469526C53B9100200292 /* RealmWine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWine.swift; sourceTree = "<group>"; };
+		C35C469926C53E2800200292 /* AddWineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWineViewController.swift; sourceTree = "<group>"; };
+		C35C469B26C53E3800200292 /* AddWineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWineViewModel.swift; sourceTree = "<group>"; };
+		C35C469D26C53E4400200292 /* AddWine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddWine.storyboard; sourceTree = "<group>"; };
+		C35C469F26C53E9300200292 /* AddWineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWineCoordinator.swift; sourceTree = "<group>"; };
+		C3791E3A26E905C500142E33 /* RxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewCell.swift; sourceTree = "<group>"; };
+		C385B8B126CFAB1900775FF6 /* FileManagerWine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerWine.swift; sourceTree = "<group>"; };
+		C385B8D426D2552100775FF6 /* FilterOfWineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOfWineViewController.swift; sourceTree = "<group>"; };
+		C385B8D626D2554800775FF6 /* FilterOfWineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOfWineViewModel.swift; sourceTree = "<group>"; };
+		C385B8DA26D25DE700775FF6 /* FilterOfWineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOfWineCoordinator.swift; sourceTree = "<group>"; };
+		C385B8E026D4222500775FF6 /* FilterOfWine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterOfWine.storyboard; sourceTree = "<group>"; };
+		C385B8E226D4238A00775FF6 /* FilterOfWineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOfWineCollectionViewCell.swift; sourceTree = "<group>"; };
+		C385B92426D9912400775FF6 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C323D47C26BAEA76008AD102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068138CDEF2C04082E9C54BC /* Pods_WineApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D792608F10AC9ABDCABF5F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BECC8F2BEBDA4AA607A40D8B /* Pods_WineApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		350C4DC0E9C4B08359A8CE76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E4F4215D66486FB715792D2 /* Pods-WineApp.debug.xcconfig */,
+				42741693BCBEC7E604705386 /* Pods-WineApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C323D47626BAEA76008AD102 = {
+			isa = PBXGroup;
+			children = (
+				C323D48126BAEA76008AD102 /* WineApp */,
+				C323D49926BAEC36008AD102 /* Recources */,
+				C323D48026BAEA76008AD102 /* Products */,
+				350C4DC0E9C4B08359A8CE76 /* Pods */,
+				1D792608F10AC9ABDCABF5F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C323D48026BAEA76008AD102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C323D47F26BAEA76008AD102 /* WineApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C323D48126BAEA76008AD102 /* WineApp */ = {
+			isa = PBXGroup;
+			children = (
+				C323D49626BAEBC7008AD102 /* Classes */,
+			);
+			path = WineApp;
+			sourceTree = "<group>";
+		};
+		C323D49626BAEBC7008AD102 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C323D49D26BAED39008AD102 /* Common */,
+				C3791E3826E9056600142E33 /* Classes  */,
+				C323D49826BAEC04008AD102 /* Application */,
+				C323D49726BAEBD7008AD102 /* Modules */,
+				C35C468426BDC93E00200292 /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C323D49726BAEBD7008AD102 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C323D49A26BAEC8A008AD102 /* Login */,
+				C323D49B26BAEC9E008AD102 /* SignUp */,
+				C323D49C26BAECA6008AD102 /* Home */,
+				C35C469826C53DDE00200292 /* AddWine */,
+				C35C468726BDDCCB00200292 /* DescriptionWine */,
+				C385B8D326D254E700775FF6 /* FilterOfWine */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C323D49826BAEC04008AD102 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C323D48226BAEA76008AD102 /* AppDelegate.swift */,
+				C323D48D26BAEA77008AD102 /* LaunchScreen.storyboard */,
+				C323D49026BAEA77008AD102 /* Info.plist */,
+				C35C467F26BD3E8E00200292 /* MyPlayground.playground */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C323D49926BAEC36008AD102 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				C323D48B26BAEA77008AD102 /* Assets.xcassets */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		C323D49A26BAEC8A008AD102 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C323D4A526BAF0B8008AD102 /* LoginViewController.swift */,
+				C323D4A326BAF0A2008AD102 /* LoginViewModel.swift */,
+				C323D4A726BAF0E1008AD102 /* Main.storyboard */,
+				C323D4B526BB25C8008AD102 /* LoginCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C323D49B26BAEC9E008AD102 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C323D4A926BAF107008AD102 /* SignUpViewController.swift */,
+				C323D4AB26BAF120008AD102 /* SignUpViewModel.swift */,
+				C323D4AD26BAF136008AD102 /* SignUp.storyboard */,
+				C323D4B926BB3397008AD102 /* SignUpCoordinator.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C323D49C26BAECA6008AD102 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C323D4AF26BAF14F008AD102 /* HomeViewController.swift */,
+				C323D4B126BAF15F008AD102 /* HomeViewModel.swift */,
+				C323D4B326BAF16A008AD102 /* Home.storyboard */,
+				C323D4B726BB2A20008AD102 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C323D49D26BAED39008AD102 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C35C467C26BD398400200292 /* Database */,
+				C323D49E26BAED41008AD102 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C323D49E26BAED41008AD102 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C35C469226C4360400200292 /* Validation */,
+				C323D4A126BAEDAF008AD102 /* ViewModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C35C467C26BD398400200292 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C35C469726C53D2500200292 /* Models */,
+				C35C468026BD5CA500200292 /* RealmStorage.swift */,
+				C385B8B126CFAB1900775FF6 /* FileManagerWine.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		C35C468426BDC93E00200292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C35C468526BDC98600200292 /* Wine.swift */,
+				C35C469026C170C600200292 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C35C468726BDDCCB00200292 /* DescriptionWine */ = {
+			isa = PBXGroup;
+			children = (
+				C35C468826BDDD4E00200292 /* DescriptionWineViewController.swift */,
+				C35C468A26BDDD6400200292 /* DescriptionWineViewModel.swift */,
+				C35C468C26BDDD7E00200292 /* DescriptionWine.storyboard */,
+				C35C468E26BDDD9600200292 /* DescriptionWineCoordinator.swift */,
+			);
+			path = DescriptionWine;
+			sourceTree = "<group>";
+		};
+		C35C469226C4360400200292 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				C35C469326C4362900200292 /* EmailValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		C35C469726C53D2500200292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C35C467D26BD39BF00200292 /* RealmUser.swift */,
+				C35C469526C53B9100200292 /* RealmWine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C35C469826C53DDE00200292 /* AddWine */ = {
+			isa = PBXGroup;
+			children = (
+				C35C469926C53E2800200292 /* AddWineViewController.swift */,
+				C35C469B26C53E3800200292 /* AddWineViewModel.swift */,
+				C35C469D26C53E4400200292 /* AddWine.storyboard */,
+				C35C469F26C53E9300200292 /* AddWineCoordinator.swift */,
+			);
+			path = AddWine;
+			sourceTree = "<group>";
+		};
+		C3791E3826E9056600142E33 /* Classes  */ = {
+			isa = PBXGroup;
+			children = (
+				C3791E3926E9058B00142E33 /* View */,
+			);
+			path = "Classes ";
+			sourceTree = "<group>";
+		};
+		C3791E3926E9058B00142E33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C35C468226BDB41B00200292 /* WineTableViewCell.swift */,
+				C3791E3A26E905C500142E33 /* RxTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C385B8D326D254E700775FF6 /* FilterOfWine */ = {
+			isa = PBXGroup;
+			children = (
+				C385B8D426D2552100775FF6 /* FilterOfWineViewController.swift */,
+				C385B8D626D2554800775FF6 /* FilterOfWineViewModel.swift */,
+				C385B8E026D4222500775FF6 /* FilterOfWine.storyboard */,
+				C385B8DA26D25DE700775FF6 /* FilterOfWineCoordinator.swift */,
+				C385B8E226D4238A00775FF6 /* FilterOfWineCollectionViewCell.swift */,
+				C385B92426D9912400775FF6 /* Filter.swift */,
+			);
+			path = FilterOfWine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C323D47E26BAEA76008AD102 /* WineApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C323D49326BAEA77008AD102 /* Build configuration list for PBXNativeTarget "WineApp" */;
+			buildPhases = (
+				F7C5C2991B9A2495B6EB3F2F /* [CP] Check Pods Manifest.lock */,
+				C323D47B26BAEA76008AD102 /* Sources */,
+				C323D47C26BAEA76008AD102 /* Frameworks */,
+				C323D47D26BAEA76008AD102 /* Resources */,
+				2D81F9B90F32BE2099143E8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WineApp;
+			productName = WineApp;
+			productReference = C323D47F26BAEA76008AD102 /* WineApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C323D47726BAEA76008AD102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C323D47E26BAEA76008AD102 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C323D47A26BAEA76008AD102 /* Build configuration list for PBXProject "WineApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C323D47626BAEA76008AD102;
+			productRefGroup = C323D48026BAEA76008AD102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C323D47E26BAEA76008AD102 /* WineApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C323D47D26BAEA76008AD102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C323D4A826BAF0E1008AD102 /* Main.storyboard in Resources */,
+				C35C469E26C53E4400200292 /* AddWine.storyboard in Resources */,
+				C323D48F26BAEA77008AD102 /* LaunchScreen.storyboard in Resources */,
+				C323D48C26BAEA77008AD102 /* Assets.xcassets in Resources */,
+				C385B8E126D4222500775FF6 /* FilterOfWine.storyboard in Resources */,
+				C323D4B426BAF16A008AD102 /* Home.storyboard in Resources */,
+				C35C468D26BDDD7E00200292 /* DescriptionWine.storyboard in Resources */,
+				C323D4AE26BAF136008AD102 /* SignUp.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D81F9B90F32BE2099143E8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C5C2991B9A2495B6EB3F2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WineApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C323D47B26BAEA76008AD102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35C468326BDB41B00200292 /* WineTableViewCell.swift in Sources */,
+				C385B92526D9912400775FF6 /* Filter.swift in Sources */,
+				C35C468126BD5CA500200292 /* RealmStorage.swift in Sources */,
+				C323D4A626BAF0B8008AD102 /* LoginViewController.swift in Sources */,
+				C385B8DB26D25DE700775FF6 /* FilterOfWineCoordinator.swift in Sources */,
+				C35C46A026C53E9300200292 /* AddWineCoordinator.swift in Sources */,
+				C385B8E326D4238A00775FF6 /* FilterOfWineCollectionViewCell.swift in Sources */,
+				C35C469A26C53E2800200292 /* AddWineViewController.swift in Sources */,
+				C35C469C26C53E3800200292 /* AddWineViewModel.swift in Sources */,
+				C35C469626C53B9100200292 /* RealmWine.swift in Sources */,
+				C385B8D526D2552100775FF6 /* FilterOfWineViewController.swift in Sources */,
+				C3791E3B26E905C500142E33 /* RxTableViewCell.swift in Sources */,
+				C323D4AA26BAF107008AD102 /* SignUpViewController.swift in Sources */,
+				C35C468926BDDD4E00200292 /* DescriptionWineViewController.swift in Sources */,
+				C35C467E26BD39BF00200292 /* RealmUser.swift in Sources */,
+				C385B8B226CFAB1900775FF6 /* FileManagerWine.swift in Sources */,
+				C323D4B626BB25C8008AD102 /* LoginCoordinator.swift in Sources */,
+				C323D4AC26BAF120008AD102 /* SignUpViewModel.swift in Sources */,
+				C385B8D726D2554800775FF6 /* FilterOfWineViewModel.swift in Sources */,
+				C323D4B226BAF15F008AD102 /* HomeViewModel.swift in Sources */,
+				C35C468F26BDDD9600200292 /* DescriptionWineCoordinator.swift in Sources */,
+				C35C468B26BDDD6400200292 /* DescriptionWineViewModel.swift in Sources */,
+				C323D4A226BAEDAF008AD102 /* ViewModelType.swift in Sources */,
+				C323D4B026BAF14F008AD102 /* HomeViewController.swift in Sources */,
+				C323D4BA26BB3397008AD102 /* SignUpCoordinator.swift in Sources */,
+				C35C468626BDC98600200292 /* Wine.swift in Sources */,
+				C323D48326BAEA76008AD102 /* AppDelegate.swift in Sources */,
+				C323D4A426BAF0A2008AD102 /* LoginViewModel.swift in Sources */,
+				C35C469426C4362900200292 /* EmailValidator.swift in Sources */,
+				C323D4B826BB2A20008AD102 /* HomeCoordinator.swift in Sources */,
+				C35C469126C170C600200292 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C323D48D26BAEA77008AD102 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C323D48E26BAEA77008AD102 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C323D49126BAEA77008AD102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C323D49226BAEA77008AD102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C323D49426BAEA77008AD102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4F4215D66486FB715792D2 /* Pods-WineApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/WineApp/Classes/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bobarykin.WineApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C323D49526BAEA77008AD102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42741693BCBEC7E604705386 /* Pods-WineApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/WineApp/Classes/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bobarykin.WineApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C323D47A26BAEA76008AD102 /* Build configuration list for PBXProject "WineApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C323D49126BAEA77008AD102 /* Debug */,
+				C323D49226BAEA77008AD102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C323D49326BAEA77008AD102 /* Build configuration list for PBXNativeTarget "WineApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C323D49426BAEA77008AD102 /* Debug */,
+				C323D49526BAEA77008AD102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C323D47726BAEA76008AD102 /* Project object */;
+}

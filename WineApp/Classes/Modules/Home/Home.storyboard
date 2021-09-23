@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="WineApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xlb-yz-9WB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemGray4Color"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WineTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="160" id="DAy-T6-GTi" customClass="WineTableViewCell" customModule="WineApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DAy-T6-GTi" id="zTT-Kh-EQ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mzG-NB-eIr">
+                                                    <rect key="frame" x="20" y="10.5" width="96" height="139"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="96" id="3NR-xl-VjN"/>
+                                                        <constraint firstAttribute="height" constant="139" id="g6Q-fM-TXK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKV-Ag-4MK">
+                                                    <rect key="frame" x="161" y="88" width="199" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Sgd-ZZ-qrH"/>
+                                                        <constraint firstAttribute="width" constant="199" id="pKt-yz-oAK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qE-W4-hik">
+                                                    <rect key="frame" x="161" y="22" width="199" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="199" id="3qv-va-xFs"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Luo-6D-oCT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LKV-Ag-4MK" firstAttribute="leading" secondItem="mzG-NB-eIr" secondAttribute="trailing" constant="45" id="CFD-HS-MDe"/>
+                                                <constraint firstItem="mzG-NB-eIr" firstAttribute="leading" secondItem="zTT-Kh-EQ9" secondAttribute="leading" constant="20" symbolic="YES" id="DiK-CX-gah"/>
+                                                <constraint firstAttribute="bottom" secondItem="LKV-Ag-4MK" secondAttribute="bottom" constant="32" id="EG9-VO-CaU"/>
+                                                <constraint firstItem="LKV-Ag-4MK" firstAttribute="top" secondItem="1qE-W4-hik" secondAttribute="bottom" constant="26" id="Fmf-qF-mVA"/>
+                                                <constraint firstItem="1qE-W4-hik" firstAttribute="leading" secondItem="mzG-NB-eIr" secondAttribute="trailing" constant="45" id="IUq-MS-qD7"/>
+                                                <constraint firstAttribute="bottom" secondItem="mzG-NB-eIr" secondAttribute="bottom" constant="10.5" id="MXZ-1w-Sgb"/>
+                                                <constraint firstItem="mzG-NB-eIr" firstAttribute="centerY" secondItem="zTT-Kh-EQ9" secondAttribute="centerY" id="mS3-kI-eEZ"/>
+                                                <constraint firstItem="1qE-W4-hik" firstAttribute="top" secondItem="zTT-Kh-EQ9" secondAttribute="top" constant="22" id="ypw-AV-M31"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="1qE-W4-hik" id="R0f-wi-M7B"/>
+                                            <outlet property="priceLabel" destination="LKV-Ag-4MK" id="lhp-Tm-xz0"/>
+                                            <outlet property="wineImageView" destination="mzG-NB-eIr" id="tMr-Ov-Svo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xlb-yz-9WB" secondAttribute="bottom" id="LYV-qM-3xd"/>
+                            <constraint firstItem="xlb-yz-9WB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hJL-Lo-Qkj"/>
+                            <constraint firstItem="xlb-yz-9WB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jwS-vc-PAl"/>
+                            <constraint firstItem="xlb-yz-9WB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="rhn-8d-cPL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QYL-xy-CUf">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2re-jn-a1V">
+                            <rect key="frame" x="187" y="5.5" width="40" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <state key="normal" title="Filter">
+                                <color key="titleColor" red="0.80826699729999996" green="0.28565400839999999" blue="0.27652978900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <rightBarButtonItems>
+                            <barButtonItem springLoaded="YES" systemItem="add" id="cco-My-sSu">
+                                <color key="tintColor" red="0.80826699729999996" green="0.28565400839999999" blue="0.27652978900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="OKe-b3-7bP">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aUi-RO-Ydz">
+                                    <rect key="frame" x="261.5" y="5" width="92" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Sort"/>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TableView" destination="xlb-yz-9WB" id="VcR-0P-dYy"/>
+                        <outlet property="addWineButton" destination="cco-My-sSu" id="w0H-8P-TP8"/>
+                        <outlet property="filterButton" destination="2re-jn-a1V" id="jwc-ct-tZP"/>
+                        <outlet property="sortButton" destination="aUi-RO-Ydz" id="FN7-cW-SgZ"/>
+                        <outlet property="tableView" destination="xlb-yz-9WB" id="j38-gS-9Zd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.05797101449286" y="32.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EIN-oG-n7T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HcM-7l-ee5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B4D-ng-hF1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="xdB-vv-7Xt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBH-P4-g8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="32.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Wine View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddWineViewController" id="Y6W-OH-hqX" customClass="AddWineViewController" customModule="WineApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-jg-YBF">
+                                <rect key="frame" x="94.5" y="99" width="225" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.80826699729999996" green="0.28565400839999999" blue="0.27652978900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="YXp-Rv-cCw"/>
+                                    <constraint firstAttribute="height" constant="250" id="zOy-jD-b1V"/>
+                                </constraints>
+                                <imageReference key="image" image="square.and.arrow.down" catalog="system" symbolScale="default"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PY0-Cg-YTM">
+                                <rect key="frame" x="45" y="410" width="324" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter name of wine:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KE-Fz-ukt">
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gazella" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELw-ZE-57Q">
+                                        <rect key="frame" x="0.0" y="38" width="324" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter price of wine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4le-Z2-CFx">
+                                        <rect key="frame" x="0.0" y="87" width="324" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mv0-Wi-GNV">
+                                        <rect key="frame" x="0.0" y="125" width="324" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLR-Tm-Et7">
+                                        <rect key="frame" x="0.0" y="174" width="324" height="36"/>
+                                        <color key="backgroundColor" red="0.80826699729999996" green="0.28565400839999999" blue="0.27652978900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-WR-r72">
+                                <rect key="frame" x="123.5" y="357" width="167" height="22"/>
+                                <color key="backgroundColor" red="0.80826699729999996" green="0.28565400839999999" blue="0.27652978900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="os4-DG-SO5"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Add Photo" image="photo" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AddPhoto:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nCP-pw-FH7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PY0-Cg-YTM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NdV-n5-JZa"/>
+                            <constraint firstItem="PY0-Cg-YTM" firstAttribute="top" secondItem="XFm-jg-YBF" secondAttribute="bottom" constant="61" id="Sge-YX-GDU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PY0-Cg-YTM" secondAttribute="trailing" constant="45" id="ewW-Xs-wxo"/>
+                            <constraint firstItem="XFm-jg-YBF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="i14-8j-HWk"/>
+                            <constraint firstItem="PY0-Cg-YTM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="45" id="j0e-oP-x6X"/>
+                            <constraint firstItem="yDL-WR-r72" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nKL-Go-XQf"/>
+                            <constraint firstItem="yDL-WR-r72" firstAttribute="top" secondItem="XFm-jg-YBF" secondAttribute="bottom" constant="8" symbolic="YES" id="vI8-ek-hf7"/>
+                            <constraint firstItem="XFm-jg-YBF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wvG-V6-BhP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addImageOfWine" destination="XFm-jg-YBF" id="75T-PR-ozi"/>
+                        <outlet property="addImageOfWineButton" destination="yDL-WR-r72" id="Ih5-dp-i4U"/>
+                        <outlet property="addNameOfWineField" destination="ELw-ZE-57Q" id="TFu-7U-h1I"/>
+                        <outlet property="addNewWine" destination="dLR-Tm-Et7" id="bJT-XA-BrA"/>
+                        <outlet property="addPriceOfWineField" destination="mv0-Wi-GNV" id="ES8-iy-XbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
